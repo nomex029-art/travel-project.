@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TravelVerse – Contact</title>
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+
+  <body>
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-overlay"></label>
+    <nav class="navbar">
+      <a href="index.html" class="logo"
+        ><span class="logo-icon">🌍</span> TravelVerse</a
+      >
+      <label for="menu-toggle" class="hamburger"
+        ><span></span><span></span><span></span
+      ></label>
+      <ul class="nav-links">
+        <li class="close-menu"><label for="menu-toggle">✕</label></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html" class="btn-nav">Book Now</a></li>
+      </ul>
+    </nav>
+
+    <section>
+      <div class="section-header">
+        <span class="section-tag">Get In Touch</span>
+        <h2>Plan Your Trip Today</h2>
+        <p>
+          Fill out the form and our travel experts will get back to you within
+          24 hours.
+        </p>
+      </div>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <h3>Let's Talk Travel</h3>
+          <p>
+            We're here to craft your perfect getaway. Reach out via any channel
+            below or simply fill the form.
+          </p>
+          <div class="contact-detail">
+            <span class="icon-circle">📞</span> +91 7997862129
+          </div>
+          <div class="contact-detail">
+            <span class="icon-circle">✉️</span> nomaan3356@gmail.com
+          </div>
+          <div class="contact-detail">
+            <span class="icon-circle">📍</span> India
+          </div>
+          <div class="contact-detail">
+            <span class="icon-circle">🕐</span> Mon-Sat: 9AM – 8PM IST
+          </div>
+        </div>
+        <form
+          class="contact-form"
+          action="mailto:hello@travelverse.in"
+          method="post"
+          enctype="text/plain"
+        >
+          <input
+            type="text"
+            name="Name"
+            placeholder="Your Full Name"
+            required
+          />
+          <input
+            type="email"
+            name="Email"
+            placeholder="Email Address"
+            required
+          />
+          <input type="tel" name="Phone" placeholder="Phone Number" />
+          <select name="Destination" required>
+            <option value="" disabled selected>
+              Select Destination Interest
+            </option>
+            <option>Makkah (Umrah)</option>
+            <option>Japan</option>
+            <option>India</option>
+            <option>China</option>
+            <option>United States</option>
+            <option>South Africa</option>
+            <option>Canada</option>
+            <option>South Korea</option>
+            <option>Australia</option>
+            <option>Other</option>
+          </select>
+          <textarea
+            name="Message"
+            placeholder="Tell us about your dream trip... (optional)"
+          ></textarea>
+          <button type="submit">🚀 Send Inquiry</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-links">
+        <a href="index.html">Home</a><a href="destinations.html">Destinations</a
+        ><a href="packages.html">Packages</a><a href="reviews.html">Reviews</a
+        ><a href="contact.html">Contact</a>
+      </div>
+      <p class="copyright">© 2024 TravelVerse. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
