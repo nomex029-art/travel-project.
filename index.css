@@ -321,6 +321,91 @@ section {
   margin-bottom: 30px;
 }
 
+/* ========== ENHANCED ABOUT SECTION ========== */
+
+.about-section {
+  background: #ffffff;
+  padding: 80px 20px;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.about-image {
+  flex: 1 1 400px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.about-image:hover img {
+  transform: scale(1.05);
+}
+
+.about-text {
+  flex: 1 1 400px;
+}
+
+.about-text h2 {
+  font-size: clamp(2rem, 4vw, 2.6rem);
+  font-weight: 800;
+  color: var(--darker);
+  margin-bottom: 20px;
+}
+
+.about-text h2 span {
+  color: var(--primary);
+}
+
+.about-text p {
+  color: var(--gray);
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.about-highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.highlight-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f1f5f9;
+  padding: 12px 18px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: var(--transition);
+}
+
+.highlight-item:hover {
+  background: var(--primary);
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+.highlight-icon {
+  font-size: 1.4rem;
+}
+
 /* WHY CHOOSE US */
 
 .features-grid {
@@ -391,11 +476,11 @@ section {
 
 /* TESTIMONIALS PREVIEW */
 
-.testimonials-preview {
+.Reviews-preview {
   background: #f1f5f9;
 }
 
-.testimonial-grid {
+.Reviews-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 24px;
@@ -403,7 +488,7 @@ section {
   margin: 0 auto;
 }
 
-.testimonial-card {
+.Reviews-card {
   background: #fff;
   border-radius: var(--radius);
   padding: 28px;
@@ -448,7 +533,8 @@ section {
 /* CTA */
 
 .cta {
-  background: var(--darker);
+  /* background: var(--darker); */
+  background: var(--primary);
   color: #fff;
   text-align: center;
 }
